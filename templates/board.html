@@ -1,0 +1,14 @@
+<table>
+  <thead></thead>
+  <tfoot></tfoot>
+  <tbody>
+    <tr ng-repeat="row in source.board">
+      <td ng-repeat="cell in row track by $index">
+        <label>
+          <input type="checkbox" name="" ng-checked="cell.isAlive()" ng-click="cell.toggleState()">
+          <span></span>
+        </label>
+      </td>
+    </tr>
+  </tbody>
+</table>
